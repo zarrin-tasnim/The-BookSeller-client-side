@@ -1,133 +1,24 @@
 [
-    {
-      "_id": 1,
-      "name": "Teeth Orthodontics",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
-    },
-    {
-      "_id": 2,
-      "name": "Cosmetic Dentistry",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
-    },
-    {
-      "_id": 3,
-      "name": "Teeth Cleaning",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
-    },
-    {
-      "_id": 4,
-      "name": "Cavity Protection",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
-    },
-    {
-      "name": "Pediatric Dental",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
-    },
-    {
-      "_id": 6,
-      "name": "Oral Surgery",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
-    }
-  ]
+  {
+    "_id": 1,
+    "picture": "https://i.ibb.co/M90hk0K/The-silent-patient.jpg",
+    "name": "Treasure Island",
+    "location": "Sylhet",
+    "resale price": 200,
+    " original price": 600,
+    "years of use": 4,
+    "time of posting": 2.00,
+    "seller's name": "Amir"
+  },
+  {
+    "_id": 2,
+    "picture": "https://i.ibb.co/M90hk0K/The-silent-patient.jpg",
+    "name": "Around the World in Eighty Days",
+    "location": "Sylhet",
+    "resale price": 200,
+    " original price": 600,
+    "years of use": 4,
+    "time of posting": 2.00,
+    "seller's name": "Amir"
+  }
+]
