@@ -41,7 +41,7 @@ const SignUp = () => {
 
     const saveUser = (name, email) => {
         const user = { name, email };
-        fetch('https://final-doctor-appoinment-server-app.vercel.app/users', {
+        fetch('https://localhost:5000/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

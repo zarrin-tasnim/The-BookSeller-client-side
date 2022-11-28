@@ -33,15 +33,12 @@ const Testimonial = () => {
     ]
 
     return (
-        <section className='my-16'>
-            <div className='flex justify-between'>
+        <section className='my-20'>
+            <div className='flex justify-center'>
                 <div className='text-center mr-20'>
-                    <h4 className="text-xl text-primary font-bold">Reviews</h4>
+                    <h4 className="text-5xl text-primary font-bold">Reviews</h4>
                     <h2 className="text-4xl mr-10">What Our Buyers Says</h2>
                 </div>
-                <figure>
-                    <img className='w-24 lg:w-48' src={quote} alt="" />
-                </figure>
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
