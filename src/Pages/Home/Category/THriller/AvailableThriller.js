@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import { useEffect } from 'react';
 import React, { useState } from 'react';
 import ProductoptionThriller from './ProductoptionThriller';
-import BookingModal from './../../Appointment/BookingModal/BookingModal';
+import BookingModal from '../../../Appointment/BookingModal/BookingModal';
 
 const AvailableThriller = () => {
     const [thriller, setThriller] = useState([]);

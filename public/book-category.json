@@ -1,11 +1,14 @@
 [
   {
+    "id": "01",
     "name": "Horror"
   },
   {
+    "id": "02",
     "name": "Thriller"
   },
   {
+    "id": "03",
     "name": "Adventure"
   }
 ]

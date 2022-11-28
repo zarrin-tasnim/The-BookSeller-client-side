@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
-import img2 from '../../../assets/images/Gone Girl.jpg';
+import img2 from '../../../../assets/images/Gone Girl.jpg';
 
 
 
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import Productoption from './../../Productdata/AvailabeProductdata/Productoption';
-import ProductoptionThriller from './ProductoptionThriller';
+
 
 const ThillerBooks = () => {
    

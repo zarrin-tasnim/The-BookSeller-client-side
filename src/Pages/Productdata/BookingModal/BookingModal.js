@@ -5,7 +5,7 @@ import { AuthContext } from '../../../contexts/AuthProvider';
 
 const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
     // treatment is just another name of appointmentOptions with name, slots, _id
-    const { name: treatmentName, price } = treatment;
+    const { name: treatmentName, resale_price } = treatment;
     const date = format(selectedDate, 'PP');
     const { user } = useContext(AuthContext);
 
@@ -22,7 +22,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
             patient: name,
             email,
             phone,
-            price
+            resale_price
         }
 
         // TODO: send data to the server
@@ -62,7 +62,10 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
                         <input type="text" disabled value={date} className="input w-full input-bordered " />
                         <input name="name" type="text" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
                         <input name="email" type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
+                        <input name="text" type="email" defaultValue={resale_price} disabled  className="input w-full input-bordered" />
                         <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
+                        <br />
+                        <input name="location" type="text" placeholder="Location" className="input w-full input-bordered" />
                         <br />
                         <input className='btn btn-accent w-full' type="submit" value="Submit" />
                     </form>

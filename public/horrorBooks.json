@@ -1,22 +1,74 @@
 [
   {
+    "id": "01",
+    "category_id": "01",
     "picture": "https://i.ibb.co/Chw5ZFj/Dracula.jpg",
     "name": "Dracula",
     "location": "Sylhet",
-    "resale price": 200,
-    "original price": 600,
-    "years of use": 1,
-    "time of posting": 2.00,
-    "seller's name": "Amir"
+    "resale_price": 200,
+    "original_price": 600,
+    "years_of_use": 1,
+    "time_of_posting": 2.00,
+    "seller's_name": "Amir"
   },
   {
+    "id": "01",
+    "category_id": "01",
     "picture": "https://i.ibb.co/7kLNrxM/Haunting-Of-Hill-House.jpg",
     "name": "The Haunting of Hill House",
     "location": "Sylhet",
-    "resale price": 200,
-    "original price": 600,
-    "years of use": 4,
-    "time of posting": 2.00,
-    "seller's name": "Amir"
+    "resale_price": 200,
+    "original_price": 600,
+    "years_of_use": 4,
+    "time_of_posting": 2.00,
+    "seller's_name": "Amir"
+  },
+  {
+    "id": "02",
+    "category_id": "02",
+    "picture": "https://i.ibb.co/M90hk0K/The-silent-patient.jpg",
+    "name": "The-silent-patient",
+    "location": "Sylhet",
+    "resale_price": 200,
+    "original_price": 600,
+    "years_of_use": 4,
+    "time_of_posting": 2.00,
+    "seller's_name": "Amir"
+  },
+  {
+    "id": "02",
+    "category_id": "02",
+    "picture": "https://i.ibb.co/gbYkT6Q/Gone-Girl.jpg",
+    "name": "Gone-Girl",
+    "location": "Sylhet",
+    "resale_price": 200,
+    "original_price": 600,
+    "years_of_use": 4,
+    "time_of_postingg": 2.00,
+    "seller's_name": "Amir"
+  },
+  {
+    "id": "03",
+    "category_id": "03",
+    "picture": "https://i.ibb.co/n3YLw3r/Treasurer-Islands.jpg",
+    "name": "Treasure Island",
+    "location": "Sylhet",
+    "resale_price": 220,
+    "original_price": 600,
+    "years_of_use": 4,
+    "time_of_postingg": 2.00,
+    "seller's_name": "Amir"
+  },
+  {
+    "id": "03",
+    "category_id": "03",
+    "picture": "https://i.ibb.co/WfWWfTB/Around-the-world-in-80-days.jpg",
+    "name": "Around the World in Eighty Days",
+    "location": "Sylhet",
+    "resale_price": 300,
+    "original_price": 600,
+    "years_of_use": 4,
+    "time_of_postingg": 2.00,
+    "seller's_name": "Amir"
   }
 ]
