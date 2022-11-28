@@ -1,18 +1,11 @@
 [
-    {
-      "_id": 1,
-      "name": "Horror"
-     
-    },
-    {
-      "_id": 2,
-      "name": "Thriller"
-     
-    },
-    {
-      "_id": 3,
-      "name": "Adventure"
-     
-    }
-   
-  ]
+  {
+    "name": "Horror"
+  },
+  {
+    "name": "Thriller"
+  },
+  {
+    "name": "Adventure"
+  }
+]

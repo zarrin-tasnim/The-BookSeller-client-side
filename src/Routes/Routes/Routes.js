@@ -12,6 +12,7 @@ import SignUp from "../../Pages/SignUp/SignUp";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Blogs from './../../Pages/Blogs/Blogs';
+import Productdata from './../../Pages/Productdata/ProductData/Productdata';
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/products/:id',
+                element: <Productdata></Productdata>,
+                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             }
         ]
     },
