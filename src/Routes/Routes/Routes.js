@@ -11,6 +11,7 @@ import DisplayError from "../../Pages/Shared/DisplayError/DisplayError";
 import SignUp from "../../Pages/SignUp/SignUp";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Blogs from './../../Pages/Blogs/Blogs';
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/blog',
+                element: <Blogs></Blogs>
             },
             {
                 path: '/login',
@@ -34,7 +39,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element:<DashboardLayout></DashboardLayout>,
+        element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
         errorElement: <DisplayError></DisplayError>,
         children: [
             {
