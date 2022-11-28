@@ -1,6 +1,5 @@
 [
   {
-    "_id": 1,
     "picture": "https://i.ibb.co/Chw5ZFj/Dracula.jpg",
     "name": "Dracula",
     "location": "Sylhet",
@@ -11,7 +10,6 @@
     "seller's name": "Amir"
   },
   {
-    "_id": 2,
     "picture": "https://i.ibb.co/7kLNrxM/Haunting-Of-Hill-House.jpg",
     "name": "The Haunting of Hill House",
     "location": "Sylhet",
