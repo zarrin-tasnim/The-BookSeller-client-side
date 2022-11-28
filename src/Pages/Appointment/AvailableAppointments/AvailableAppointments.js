@@ -9,14 +9,14 @@ const AvailableAppointments = ({ selectedDate }) => {
     const [treatment, setTreatment] = useState(null);
     const date = format(selectedDate, 'PP');
     
-    if (isLoading) {
-        return <Loading></Loading>
-    }
+    // if (isLoading) {
+    //     return <Loading></Loading>
+    // }
 
     return (
         <section className='my-16'>
             <p className='text-center text-secondary font-bold'>Available Appointments on {format(selectedDate, 'PP')}</p>
-            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6'>
+            {/* <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6'>
                 {
                     appointmentOptions.map(option => <AppointmentOption
                         key={option._id}
@@ -24,14 +24,13 @@ const AvailableAppointments = ({ selectedDate }) => {
                         setTreatment={setTreatment}
                     ></AppointmentOption>)
                 }
-            </div>
+            </div> */}
             {
                 treatment &&
                 <BookingModal
                     selectedDate={selectedDate}
                     treatment={treatment}
                     setTreatment={setTreatment}
-                    refetch={refetch}
                 ></BookingModal>
             }
         </section>

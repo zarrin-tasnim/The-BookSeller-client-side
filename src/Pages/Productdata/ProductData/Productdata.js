@@ -6,10 +6,10 @@ const Productdata = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
     return (
         <div>
-            <ProductdataBanner
+            {/* <ProductdataBanner
                 selectedDate={selectedDate}
                 setSelectedDate={setSelectedDate}
-            ></ProductdataBanner>
+            ></ProductdataBanner> */}
             <AvailabeProductdata
                 selectedDate={selectedDate}
             ></AvailabeProductdata>
