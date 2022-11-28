@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AvailabeProductdata from '../AvailabeProductdata/AvailabeProductdata';
-import ProductdataBanner from '../ProductdataBanner/ProductdataBanner';
+
 
 const Productdata = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());

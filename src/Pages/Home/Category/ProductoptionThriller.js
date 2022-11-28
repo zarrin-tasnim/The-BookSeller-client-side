@@ -1,8 +1,7 @@
 import React from 'react';
 
-
-const Productoption = ({ product, setTreatment }) => {
-    const { name, price} = product;
+const ProductoptionThriller = ({ thriller, setTreatment }) => {
+    const { name, price} = thriller;
     return (
         <div className="card shadow-xl">
             <div className="card-body text-center">
@@ -13,13 +12,12 @@ const Productoption = ({ product, setTreatment }) => {
                     <label
                         htmlFor="booking-modal"
                         className="btn btn-primary text-white"
-                        onClick={() => setTreatment(product)}
+                        onClick={() => setTreatment(thriller)}
                     >Book Appointment</label>
                 </div>
-                
             </div>
         </div>
     );
 };
 
-export default Productoption;
+export default ProductoptionThriller;
