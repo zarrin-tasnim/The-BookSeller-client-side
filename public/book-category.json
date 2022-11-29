@@ -1,14 +1,17 @@
 [
   {
     "id": "01",
-    "name": "Horror"
+    "name": "Horror",
+    "img": "https://i.ibb.co/7kLNrxM/Haunting-Of-Hill-House.jpg"
   },
   {
     "id": "02",
-    "name": "Thriller"
+    "name": "Thriller",
+    "img": "https://i.ibb.co/M90hk0K/The-silent-patient.jpg"
   },
   {
     "id": "03",
-    "name": "Adventure"
+    "name": "Adventure",
+    "img": "https://i.ibb.co/WfWWfTB/Around-the-world-in-80-days.jpg"
   }
 ]

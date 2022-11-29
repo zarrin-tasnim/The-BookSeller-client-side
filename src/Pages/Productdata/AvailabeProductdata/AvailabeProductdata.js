@@ -1,5 +1,8 @@
 
+import { useQuery } from '@tanstack/react-query';
+import { format } from 'date-fns';
 import React, { useState } from 'react';
+import Loading from '../../Shared/Loading/Loading';
 import BookingModal from '../BookingModal/BookingModal';
 import Productoption from './Productoption';
 
@@ -7,17 +10,27 @@ import { useLoaderData } from 'react-router-dom';
 
 const AvailabeProductdata = () => {
     const [treatment, setTreatment] = useState(null);
-   
-    
-    // const collection = useLoaderData();
-    
+    const [selectedDate, setSelectedDate] = useState(new Date());
+    const date = format(selectedDate, 'PP');
+
+    const products = useLoaderData();
+
+    // const { data: appointmentOptions = [], refetch, isLoading } = useQuery({
+    //     queryKey: ['appointmentOptions', date],
+    //     queryFn: async () => {
+    //         const res = await fetch(`http://localhost:5000/appointmentOptions?date=${date}`);
+    //         const data = await res.json();
+    //         return data
+    //     }
+    // });
+
     // if (isLoading) {
     //     return <Loading></Loading>
     // }
 
    
-    const [selectedDate, setSelectedDate] = useState(new Date());
-    const products = useLoaderData();
+
+   
 
     return (
         <section className='my-16'>
@@ -36,7 +49,7 @@ const AvailabeProductdata = () => {
                 <BookingModal
                         selectedDate={selectedDate}
                     treatment={treatment}
-                    setTreatment={setTreatment}
+                        setTreatment={setTreatment}
                 ></BookingModal>
             }
         </section>

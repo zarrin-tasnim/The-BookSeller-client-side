@@ -9,7 +9,7 @@
     "original_price": 600,
     "years_of_use": 1,
     "time_of_posting": 2.00,
-    "seller's_name": "Amir"
+    "seller_name": "Amir"
   },
   {
     "id": "01",
@@ -21,7 +21,7 @@
     "original_price": 600,
     "years_of_use": 4,
     "time_of_posting": 2.00,
-    "seller's_name": "Amir"
+    "seller_name": "Amir"
   },
   {
     "id": "02",
@@ -33,7 +33,7 @@
     "original_price": 600,
     "years_of_use": 4,
     "time_of_posting": 2.00,
-    "seller's_name": "Amir"
+    "seller_name": "Amir"
   },
   {
     "id": "02",
@@ -45,7 +45,7 @@
     "original_price": 600,
     "years_of_use": 4,
     "time_of_postingg": 2.00,
-    "seller's_name": "Amir"
+    "seller_name": "Amir"
   },
   {
     "id": "03",
@@ -57,7 +57,7 @@
     "original_price": 600,
     "years_of_use": 4,
     "time_of_postingg": 2.00,
-    "seller's_name": "Amir"
+    "seller_name": "Amir"
   },
   {
     "id": "03",
@@ -69,6 +69,6 @@
     "original_price": 600,
     "years_of_use": 4,
     "time_of_postingg": 2.00,
-    "seller's_name": "Amir"
+    "seller_name": "Amir"
   }
 ]

@@ -3,10 +3,11 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider';
 
+
 const MyAppointment = () => {
     const { user } = useContext(AuthContext);
 
-    const url = `https://localhost:5000/bookings?email=${user?.email}`;
+    const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],
@@ -17,6 +18,7 @@ const MyAppointment = () => {
                 }
             });
             const data = await res.json();
+            console.log(data);
             return data;
         }
     })
@@ -29,10 +31,9 @@ const MyAppointment = () => {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Treatment</th>
+                            <th>CategoryName</th>
                             <th>Date</th>
-                            <th>Time</th>
+                            <th>Location</th>
                             <th>Payment</th>
                         </tr>
                     </thead>
@@ -41,10 +42,10 @@ const MyAppointment = () => {
                             bookings &&
                             bookings?.map((booking, i) => <tr key={booking._id}>
                                 <th>{i + 1}</th>
-                                <td>{booking.patient}</td>
-                                <td>{booking.treatment}</td>
+                                <td>{booking.bookName}</td>
                                 <td>{booking.appointmentDate}</td>
-                                <td>{booking.slot}</td>
+                                <td>{booking.location}</td>
+                               
                                 <td>
                                     {
                                         booking.price && !booking.paid && <Link

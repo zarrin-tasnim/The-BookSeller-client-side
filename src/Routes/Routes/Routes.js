@@ -15,6 +15,11 @@ import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Blogs from './../../Pages/Blogs/Blogs';
 import AvailabeProductdata from './../../Pages/Productdata/AvailabeProductdata/AvailabeProductdata';
+import AdminRoute from './../AdminRoute/AdminRoute';
+import AllUsers from './../../Pages/Dashboard/AllUsers/AllUsers';
+import AddDoctor from './../../Pages/Dashboard/AddDoctor/AddDoctor';
+import ManageDoctors from './../../Pages/Dashboard/ManageDoctors/ManageDoctors';
+import Payment from './../../Pages/Dashboard/Payment/Payment';
 
 
 
@@ -56,6 +61,23 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <MyAppointment></MyAppointment>
+            },
+            {
+                path: '/dashboard/allusers',
+                element: <AdminRoute> <AllUsers></AllUsers></AdminRoute>
+            },
+            {
+                path: '/dashboard/adddoctor',
+                element: <AdminRoute> <AddDoctor></AddDoctor></AdminRoute>
+            },
+            {
+                path: '/dashboard/managedoctors',
+                element: <AdminRoute> <ManageDoctors></ManageDoctors></AdminRoute>
+            },
+            {
+                path: '/dashboard/payment/:id',
+                element: <Payment></Payment>,
+                loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`)
             }
         ]
     }

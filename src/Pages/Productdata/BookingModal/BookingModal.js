@@ -1,11 +1,12 @@
 import { format } from 'date-fns';
 import React, { useContext } from 'react';
-import toast from 'react-hot-toast';
+
 import { AuthContext } from '../../../contexts/AuthProvider';
+import { toast } from 'react-hot-toast';
 
 const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
-    // treatment is just another name of appointmentOptions with name, slots, _id
-    const { name: treatmentName, resale_price } = treatment;
+    // treatment is just another name of appointmentOptions/productOptions with name, slots, _id
+    const { name: bookName, resale_price, location } = treatment;
     const date = format(selectedDate, 'PP');
     const { user } = useContext(AuthContext);
 
@@ -18,17 +19,18 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
         // [3, 4, 5].map((value, i) => console.log(value))
         const booking = {
             appointmentDate: date,
-            treatment: treatmentName,
-            patient: name,
+            bookName: bookName,
+            seller: name,
             email,
             phone,
-            resale_price
+            resale_price,
+            location
         }
-
+        // console.log(booking);
         // TODO: send data to the server
         // and once data is saved then close the modal 
         // and display success toast
-        fetch('https://localhost:5000/bookings', {
+        fetch('http://localhost:5000/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -57,7 +59,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
             <div className="modal">
                 <div className="modal-box relative">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 className="text-lg font-bold">{treatmentName}</h3>
+                    <h3 className="text-lg font-bold">{bookName}</h3>
                     <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 mt-10'>
                         <input type="text" disabled value={date} className="input w-full input-bordered " />
                         <input name="name" type="text" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
