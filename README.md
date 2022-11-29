@@ -1,3 +1,28 @@
+<!-- My Project -->
+
+Project Name- The-BookSeller
+
+Live website link - https://thebookseller-e7246.web.app/
+
+My projects feature and functionalities-
+
+<ul>
+<li>This is a book reselling website.</li>
+</ul>
+1. I have two part in my book seller website.Admin and seller.
+2. I have 3 category's in my homepage.By clicking all those category using 'View All' button ,anyone can see how many products i have in those books category.
+
+3. By clicking  "Book now" button in product page ,a modal will be open and by filling the form in modal and clicking 'Submit' button anyone can confirm their booking for their desired books.
+
+4. There also has a dashboard page. A normal seller will just see the My Orders page, where they can see all the booked orders.  From here they can pay for their desired booking.
+
+5. Admin in Dashboard page will see 4 pages. My Orders, All Sellers, Add a product and My Products.
+In All Seller page , he will see every users and can make anyone admin or delete any users.
+In Add a product page, admin can add a product which will be visible to My Products page.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

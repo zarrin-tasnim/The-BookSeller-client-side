@@ -34,9 +34,9 @@ const Testimonial = () => {
     return (
         <section className='my-20'>
             <div className='flex justify-center'>
-                <div className='text-center mr-20'>
+                <div className='text-center mr-20 ml-20'>
                     <h4 className="text-5xl text-primary font-bold">Reviews</h4>
-                    <h2 className="text-4xl mr-10">What Our Buyers Says</h2>
+                    <h2 className="text-3xl my-10 mr-10">What Our Buyers Says</h2>
                 </div>
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>

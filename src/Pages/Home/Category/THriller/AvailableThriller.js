@@ -11,15 +11,15 @@ const AvailableThriller = () => {
     const [treatment, setTreatment] = useState(null);
     const [selectedDate, setSelectedDate] = useState(new Date());
     const date = format(selectedDate, 'PP');
-   
+
     useEffect(() => {
-        fetch('http://localhost:5000/thrillerBooks')
+        fetch('https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/thrillerBooks')
             .then(res => res.json())
             .then(data => setThriller(data))
     }, []);
     return (
         <section className='my-16'>
-           
+
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6'>
                 {
                     thriller.map(thriller => <ProductoptionThriller

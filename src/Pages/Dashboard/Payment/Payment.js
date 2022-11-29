@@ -12,14 +12,20 @@ const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
 const Payment = () => {
     const booking = useLoaderData();
     const navigation = useNavigation();
-    const { treatment, price, appointmentDate, slot } = booking;
+    const { 
+        bookName,
+        seller,
+        email,
+        phone,
+        resale_price,
+        location, treatment,  appointmentDate, slot } = booking;
     if(navigation.state === "loading"){
         return <Loading></Loading>
     }
     return (
         <div>
-            <h3 className="text-3xl">Payment for {treatment}</h3>
-            <p className="text-xl">Please pay <strong>${price}</strong> for your appointment on {appointmentDate} at {slot}</p>
+            <h3 className="text-3xl">Payment for {bookName}</h3>
+            <p className="text-xl">Please pay <strong>${resale_price}</strong> for your appointment on {appointmentDate} at {slot}</p>
             <div className='w-96 my-12'>
                 <Elements stripe={stripePromise}>
                     <CheckoutForm

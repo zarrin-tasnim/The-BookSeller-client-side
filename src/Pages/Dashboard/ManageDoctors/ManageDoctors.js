@@ -16,7 +16,7 @@ const ManageDoctors = () => {
         queryKey: ['doctors'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:5000/doctors', {
+                const res = await fetch('https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/doctors', {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -32,7 +32,7 @@ const ManageDoctors = () => {
 
 
     const handleDeleteDoctor = doctor => {
-        fetch(`http://localhost:5000/doctors/${doctor._id}`, {
+        fetch(`https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/doctors/${doctor._id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
@@ -61,7 +61,6 @@ const ManageDoctors = () => {
                             <th></th>
                             <th>Avatar</th>
                             <th>Name</th>
-                            <th>Email</th>
                             <th>Specialty</th>
                             <th>Action</th>
                         </tr>
@@ -76,7 +75,6 @@ const ManageDoctors = () => {
                                     </div>
                                 </div></td>
                                 <td>{doctor.name}</td>
-                                <td>{doctor.email}</td>
                                 <td>{doctor.specialty}</td>
                                 <td>
                                     <label onClick={() => setDeletingDoctor(doctor)} htmlFor="confirmation-modal" className="btn btn-sm btn-error">Delete</label>

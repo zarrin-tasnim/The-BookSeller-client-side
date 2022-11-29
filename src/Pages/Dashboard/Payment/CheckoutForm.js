@@ -10,7 +10,13 @@ const CheckoutForm = ({ booking }) => {
 
     const stripe = useStripe();
     const elements = useElements();
-    const { price, email, patient, _id } = booking;
+    const { appointmentDate: date,
+        bookName,
+        seller,
+        email,
+        phone,
+        resale_price,
+        location, _id } = booking;
 
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
@@ -20,11 +26,11 @@ const CheckoutForm = ({ booking }) => {
                 "Content-Type": "application/json",
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
             },
-            body: JSON.stringify({ price }),
+            body: JSON.stringify({ resale_price }),
         })
             .then((res) => res.json())
             .then((data) => setClientSecret(data.clientSecret));
-    }, [price]);
+    }, [resale_price]);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -58,7 +64,7 @@ const CheckoutForm = ({ booking }) => {
                 payment_method: {
                     card: card,
                     billing_details: {
-                        name: patient,
+                        name: seller,
                         email: email
                     },
                 },
@@ -73,7 +79,7 @@ const CheckoutForm = ({ booking }) => {
             console.log('card info', card);
             // store payment info in the database
             const payment = {
-                price,
+                resale_price,
                 transactionId: paymentIntent.id,
                 email,
                 bookingId: _id
@@ -120,7 +126,7 @@ const CheckoutForm = ({ booking }) => {
                     }}
                 />
                 <button
-                    className='btn btn-sm mt-4 btn-primary'
+                    className='btn btn-sm mt-4 btn-black '
                     type="submit"
                     disabled={!stripe || !clientSecret || processing}>
                     Pay

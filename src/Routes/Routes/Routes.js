@@ -23,6 +23,7 @@ import Payment from './../../Pages/Dashboard/Payment/Payment';
 
 
 
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                loader: () => fetch(`http://localhost:5000/categories`),
+                loader: () => fetch(`https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/categories`),
                 element: <Home></Home>
             },
             {
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
             {
                 path: '/categories/:id',
                 element: <PrivateRoute><AvailabeProductdata></AvailabeProductdata></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
+                loader: ({ params }) => fetch(`https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/categories/${params.id}`)
             }
         ]
     },
@@ -77,9 +78,13 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/payment/:id',
                 element: <Payment></Payment>,
-                loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`)
+                loader: ({ params }) => fetch(`https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/bookings/${params.id}`)
             }
         ]
+    },
+    {
+        path: '*',
+        element: <DisplayError></DisplayError>
     }
 ])
 

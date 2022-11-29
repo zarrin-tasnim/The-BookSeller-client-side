@@ -18,7 +18,7 @@ const AvailabeProductdata = () => {
     // const { data: appointmentOptions = [], refetch, isLoading } = useQuery({
     //     queryKey: ['appointmentOptions', date],
     //     queryFn: async () => {
-    //         const res = await fetch(`http://localhost:5000/appointmentOptions?date=${date}`);
+    //         const res = await fetch(`https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/appointmentOptions?date=${date}`);
     //         const data = await res.json();
     //         return data
     //     }
@@ -41,6 +41,7 @@ const AvailabeProductdata = () => {
                         key={product.id}
                         product={product}
                         setTreatment={setTreatment}
+                        selectedDate={selectedDate}
                     ></Productoption>)
                 }
             </div>

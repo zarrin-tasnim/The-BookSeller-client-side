@@ -27,6 +27,7 @@ const Login = () => {
                 const user = result.user;
                 console.log(user);
                 setLoginUserEmail(data.email);
+                navigate('/');
             })
             .catch(error => {
                 console.log(error.message)
@@ -35,7 +36,7 @@ const Login = () => {
     }
 
     return (
-        <div className='h-[800px] flex justify-center items-center'>
+        <div className='h-[800px] flex justify-center items-center bg-black '>
             <div className='w-96 p-7'>
                 <h2 className='text-xl text-center'>Login</h2>
                 <form onSubmit={handleSubmit(handleLogin)}>
@@ -59,7 +60,7 @@ const Login = () => {
                         <label className="label"> <span className="label-text">Forget Password?</span></label>
                         {errors.password && <p className='text-red-600'>{errors.password?.message}</p>}
                     </div>
-                    <input className='btn btn-accent w-full' value="Login" type="submit" />
+                    <input className='btn btn-accent text-black w-full' value="Login" type="submit" />
                     <div>
                         {loginError && <p className='text-red-600'>{loginError}</p>}
                     </div>

@@ -30,7 +30,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
         // TODO: send data to the server
         // and once data is saved then close the modal 
         // and display success toast
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://b612-used-products-resale-server-side-zarrin-tasnim.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -64,7 +64,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
                         <input type="text" disabled value={date} className="input w-full input-bordered " />
                         <input name="name" type="text" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
                         <input name="email" type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
-                        <input name="text" type="email" defaultValue={resale_price} disabled  className="input w-full input-bordered" />
+                        <input name="text" type="email" defaultValue={resale_price} disabled className="input w-full input-bordered" />
                         <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
                         <br />
                         <input name="location" type="text" placeholder="Location" className="input w-full input-bordered" />

@@ -21,7 +21,7 @@ const Category = ({category}) => {
                 <h1 className="card-title">{name}</h1>
                 <div className="card-actions text-center items-center mt-5">
                     <Link to={`/categories/${id}`}>
-                        <button className="btn btn-secondary btn-glass w-full mx-auto">View ALL</button>
+                        <button className="btn btn-primary  w-full mx-auto">View ALL</button>
                     </Link>
                 </div>
             </div>
